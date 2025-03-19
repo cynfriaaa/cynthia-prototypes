@@ -10,7 +10,7 @@ interface DraggableAccessoryProps {
 }
 
 export const DraggableAccessory: React.FC<DraggableAccessoryProps> = ({ emoji, defaultPosition = { x: 0, y: 0 } }) => {
-  const nodeRef = useRef<HTMLDivElement>(null);
+  const nodeRef = useRef<any>(null);
   const [scale, setScale] = useState(1);
   const [position, setPosition] = useState(defaultPosition);
 
